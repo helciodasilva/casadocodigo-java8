@@ -1,0 +1,5 @@
+OptionalDouble media = usuarios.stream()
+							   .mapToInt(Usuario::getPontos)
+							   .average();
+							   
+double pontuacaoMedia = media.orElse(0.0);

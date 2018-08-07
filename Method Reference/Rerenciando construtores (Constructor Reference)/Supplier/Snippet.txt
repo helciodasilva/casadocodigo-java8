@@ -1,0 +1,2 @@
+Supplier<Usuario> criadorDeUsuarios = Usuario::new;
+Usuario novo = criadorDeUsuarios.get();

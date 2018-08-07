@@ -1,0 +1,3 @@
+Reduzindo BigDecimal em somas
+	Vamos calcular o valor total do pagamento payment1 utilizando a API de Stream e lambdas. Há um problema. Se preço fosse um int, poderíamos usar o mapToDouble e invocar o sum do DoubleStream resultante. Não é o caso. Teremos um Stream<BigDecimal> e ele não possui um sum.
+	Nesse caso precisaremos fazer a redução na mão, realizando a soma de BigDecimal. Podemos usar o (total, price) -> total.add(price), mas fca ainda mais fácil usando um method reference:

@@ -1,0 +1,4 @@
+usuarios.stream()
+		.filter(u -> u.getPontos() > 100)
+		.peek(System.out::println)
+		.findAny();

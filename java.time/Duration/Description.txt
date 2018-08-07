@@ -1,0 +1,1 @@
+Mas como criar um período de horas, minutos ou segundos? A resposta é: não criamos. Neste caso, estamos interessados em outra medida de tempo, que é a Duration. Enquanto um Period considera as medidas de data (dias, meses e anos), a Duration considera as medidas de tempo (horas, minutos, segundos etc.).

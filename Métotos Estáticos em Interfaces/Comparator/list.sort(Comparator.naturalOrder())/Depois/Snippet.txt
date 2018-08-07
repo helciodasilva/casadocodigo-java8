@@ -1,0 +1,3 @@
+List<String> palavras = Arrays.asList("Casa do Código", "Alura", "Caelum");
+
+palavras.sort(Comparator.naturalOrder());

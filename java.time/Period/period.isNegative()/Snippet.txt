@@ -1,0 +1,9 @@
+LocalDate agora = LocalDate.now();
+LocalDate outraData = LocalDate.of(2015, Month.JANUARY, 25);
+Period periodo = Period.between(outraData, agora);
+
+if (periodo.isNegative()) {
+	periodo = periodo.negated();
+}
+
+System.out.printf("%s dias, %s meses e %s anos", periodo.getDays(), periodo.getMonths(), periodo.getYears());

@@ -1,0 +1,3 @@
+Mas quando devemos utilizar um iterator de um Stream, se há um forEach tanto em Collection quanto no próprio Stream?
+
+Um motivo para usar um Iterator é quando queremos modifcar os objetos de um Stream. Quando utilizarmos streams paralelos, veremos que não devemos mudar o estado dos objetos que estão nele, correndo o risco de ter resultados não determinísticos. Outro motivo é a compatibilidade de APIs. Pode ser que você precise invocar um método que recebe Iterator.

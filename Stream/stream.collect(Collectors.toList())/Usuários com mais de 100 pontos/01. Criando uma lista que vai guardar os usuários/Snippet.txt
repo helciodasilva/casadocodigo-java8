@@ -1,0 +1,5 @@
+List<Usuario> maisQue100 = new ArrayList<>();
+
+usuarios.stream()
+		.filter(u -> u.getPontos() > 100)
+		.forEach(u -> maisQue100.add(u));

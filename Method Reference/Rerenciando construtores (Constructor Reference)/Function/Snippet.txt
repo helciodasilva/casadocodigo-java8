@@ -1,0 +1,3 @@
+Function<String, Usuario> criadorDeUsuarios = Usuario::new;
+Usuario rodrigo = criadorDeUsuarios.apply("Rodrigo Turini");
+Usuario paulo = criadorDeUsuarios.apply("Paulo Silveira");

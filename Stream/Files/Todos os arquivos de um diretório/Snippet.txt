@@ -1,0 +1,2 @@
+Files.list(Paths.get("./br/com/casadocodigo/java8"))
+	.forEach(System.out::println);

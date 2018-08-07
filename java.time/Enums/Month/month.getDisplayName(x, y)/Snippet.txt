@@ -1,0 +1,3 @@
+Locale pt = new Locale("pt");
+System.out.println(Month.DECEMBER.getDisplayName(TextStyle.FULL, pt)); // Dezembro
+System.out.println(Month.DECEMBER.getDisplayName(TextStyle.SHORT, pt)); // Dez

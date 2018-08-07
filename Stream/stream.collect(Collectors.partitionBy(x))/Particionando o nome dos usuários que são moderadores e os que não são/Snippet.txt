@@ -1,0 +1,2 @@
+Map<Boolean, List<String>> nomesPorTipo = usuarios.stream()
+												  .collect(Collectors.partitioningBy(Usuario::isModerador, Collectors.mapping(Usuario::getNome, Collectors.toList())));

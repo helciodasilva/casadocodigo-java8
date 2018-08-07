@@ -1,0 +1,5 @@
+Claro, afnal, assim como as expressões lambda, precisamos guardar o resultado dessa referência em uma interface funcional! Vamos utilizar a interface Supplier, também presente no pacote java.util.function. Note a assinatura de seu método:
+
+Ela tem a forma de uma factory. Podemos guardar a expressão Usuario::new em um Supplier<Usuario> e chamar seu método get sempre que for desejada a instanciação de um novo objeto do tipo Usuario:
+
+Utilizamos um Supplier sempre para criar um novo objeto a partir de seu construtor default. Caso queiramos criar a partir de algum construtor com argumento da classe, precisaremos utilizar alguma outra interface funcional. Considere o seguinte construtor que recebe uma String para atribuir ao nome do Usuario.

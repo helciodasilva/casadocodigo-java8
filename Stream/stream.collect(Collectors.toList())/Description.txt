@@ -1,0 +1,1 @@
+Collectors.toList devolve um coletor bem parecido com o qual criamos na mão, com a diferença de que ele devolve uma lista que não sabemos se é mutável, se é thread-safe ou qual a sua implementação.

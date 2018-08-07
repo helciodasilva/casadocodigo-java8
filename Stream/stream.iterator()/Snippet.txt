@@ -1,0 +1,1 @@
+Iterator<Usuario> i = usuarios.stream().iterator();

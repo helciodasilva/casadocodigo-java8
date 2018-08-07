@@ -1,0 +1,3 @@
+Comparator<Usuario> comparator = Comparator.comparing(u -> u.getNome());
+
+usuarios.sort(comparator);

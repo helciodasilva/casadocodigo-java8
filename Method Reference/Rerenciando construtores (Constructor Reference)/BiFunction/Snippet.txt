@@ -1,0 +1,4 @@
+BiFunction<String, Integer, Usuario> criadorDeUsuarios = Usuario::new;
+
+Usuario rodrigo = criadorDeUsuarios.apply("Rodrigo Turini", 50);
+Usuario paulo = criadorDeUsuarios.apply("Paulo Silveira", 300);

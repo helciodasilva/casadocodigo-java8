@@ -1,0 +1,2 @@
+Consumer<Usuario> tornaModerador = Usuario::tornaModerador;
+usuarios.forEach(tornaModerador);

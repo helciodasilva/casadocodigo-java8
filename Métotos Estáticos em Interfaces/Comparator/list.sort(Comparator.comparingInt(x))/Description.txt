@@ -1,0 +1,6 @@
+Autoboxing nos lambdas
+	Há um problema aqui. O extraiPontos gerado terá um método apply que recebe um Usuario e devolve um Integer, em vez de um int. Isso gerará um autoboxing toda vez que esse método for invocado. E ele poderá ser invocado muitíssimas vezes pelo sort, através do compare do Comparator devolvido pelo Comparator.comparing.
+
+	Esse tipo de problema vai aparecer diversas vezes nas novas APIs do Java 8. Para evitar esse autoboxing (e às vezes o unboxing) desnecessário, há interfaces equivalentes que trabalham diretamente com long, double e int.
+
+	Em vez de utilizar a interface Function, devemos nesse caso utilizar o ToIntFunction e, consequentemente, o método comparingInt, que recebe ToIntFunction em vez de Function:

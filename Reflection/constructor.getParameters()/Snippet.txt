@@ -1,0 +1,5 @@
+Constructor<Usuario> constructor = Usuario.class.getConstructor(String.class, int.class);
+
+Parameter[] parameters = constructor.getParameters();
+
+Arrays.asList(parameters).forEach(param -> System.out.println(param.getName()));

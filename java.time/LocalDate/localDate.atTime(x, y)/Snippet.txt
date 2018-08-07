@@ -1,0 +1,1 @@
+LocalDateTime hojeAoMeioDia = LocalDate.now().atTime(12,0);

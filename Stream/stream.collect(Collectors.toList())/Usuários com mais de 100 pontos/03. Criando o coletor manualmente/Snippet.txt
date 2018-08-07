@@ -1,0 +1,7 @@
+Supplier<ArrayList<Usuario>> supplier = ArrayList::new;
+BiConsumer<ArrayList<Usuario>, Usuario> accumulator = ArrayList::add;
+BiConsumer<ArrayList<Usuario>, ArrayList<Usuario>> combiner = ArrayList::addAll;
+
+List<Usuario> maisQue100 = usuarios.stream()
+	.filter(u -> u.getPontos() > 100)
+	.collect(supplier, accumulator, combiner);

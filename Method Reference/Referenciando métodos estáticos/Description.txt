@@ -1,0 +1,3 @@
+Em vez de usar a BiFunction, poderíamos usar aqui uma ToIntBiFunction<Integer, Integer>, evitando o unboxing do retorno. Sim, é possível evitar todo boxing, usando uma IntBinaryOperator, que recebe dois ints e devolve um int.
+
+Qual usar? IntBinaryOperator certamente é mais interessante, mas vai depender do método que receberá nosso lambda como argumento. Normalmente nem paramos para pensar muito nisso, pois passaremos Math::max diretamente como argumento para algum método.

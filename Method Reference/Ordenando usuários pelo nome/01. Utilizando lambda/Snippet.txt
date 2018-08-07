@@ -1,0 +1,1 @@
+usuarios.sort(Comparator.comparing(u -> u.getNome()));

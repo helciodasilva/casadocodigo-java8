@@ -1,0 +1,3 @@
+String nomes = usuarios.stream()
+					   .map(Usuario::getNome)
+					   .collect(Collectors.joining(", "));

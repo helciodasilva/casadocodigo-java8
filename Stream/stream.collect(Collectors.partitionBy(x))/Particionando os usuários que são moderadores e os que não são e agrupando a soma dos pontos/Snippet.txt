@@ -1,0 +1,2 @@
+Map<Boolean, Integer> pontuacaoPorTipo = usuarios.stream()
+												 .collect(Collectors.partitioningBy(Usuario::isModerador, Collectors.summingInt(Usuario::getPontos)));

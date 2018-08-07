@@ -1,0 +1,3 @@
+int total = usuarios.stream()
+					.mapToInt(Usuario::getPontos)
+					.sum();

@@ -1,0 +1,3 @@
+List<Integer> pontos = usuarios.stream()
+							   .map(u -> u.getPontos())
+							   .collect(toList());

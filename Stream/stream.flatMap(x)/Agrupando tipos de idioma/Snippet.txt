@@ -1,0 +1,4 @@
+groups.stream()
+	  .flatMap(g -> g.getUsuarios().stream())
+	  .distinct()
+	  .forEach(System.out::println);

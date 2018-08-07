@@ -1,0 +1,3 @@
+default void sort(Comparator<? super E> c) {
+	Collections.sort(this, c);
+}

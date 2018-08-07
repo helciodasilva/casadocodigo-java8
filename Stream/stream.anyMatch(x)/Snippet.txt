@@ -1,0 +1,2 @@
+boolean hasModerator = usuarios.stream()
+							   .anyMatch(Usuario::isModerador);

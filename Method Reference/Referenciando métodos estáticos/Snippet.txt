@@ -1,0 +1,3 @@
+BiFunction<Integer, Integer, Integer> max = Math::max;
+ToIntBiFunction<Integer, Integer> max2 = Math::max;
+IntBinaryOperator max3 = Math::max;

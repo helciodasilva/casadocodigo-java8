@@ -1,0 +1,8 @@
+Map<Product, Long> topProducts = payments.stream()
+									     .flatMap(p -> p.getProducts().stream())
+									     .collect(Collectors.groupingBy(Function.identity(),
+									     Collectors.counting()));
+
+topProducts.entrySet().stream()
+					  .max(Comparator.comparing(Map.Entry::getValue))
+					  .ifPresent(System.out::println);

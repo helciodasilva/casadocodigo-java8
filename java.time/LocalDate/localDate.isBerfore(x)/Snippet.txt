@@ -1,0 +1,5 @@
+LocalDate hoje = LocalDate.now();
+LocalDate amanha = LocalDate.now().plusDays(1);
+System.out.println(hoje.isBefore(amanha));
+System.out.println(hoje.isAfter(amanha));
+System.out.println(hoje.isEqual(amanha));

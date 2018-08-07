@@ -1,0 +1,5 @@
+LocalDate agora = LocalDate.now();
+LocalDate outraData = LocalDate.of(1989, Month.JANUARY, 25);
+Period periodo = Period.between(outraData, agora);
+System.out.printf("%s dias, %s meses e %s anos",
+periodo.getDays(), periodo.getMonths(), periodo.getYears());

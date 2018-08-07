@@ -1,0 +1,2 @@
+É isso mesmo: além de poder ter métodos default dentro de uma interface, agora podemos ter métodos estáticos. A interface Comparator possui alguns deles. 
+O nosso usuarios.sort(...) pode fcar ainda mais curto, com o auxílio do Comparator.comparing(...), que é uma fábrica (factory) de Comparators.

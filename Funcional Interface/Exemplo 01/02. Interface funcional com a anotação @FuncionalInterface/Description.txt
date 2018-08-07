@@ -1,0 +1,1 @@
+Essa anotação serve apenas para que ninguém torne aquela interface em nãofuncional acidentalmente. Ela é opcional justamente para que as interfaces das antigas bibliotecas possam também ser tratadas como lambdas, independente da anotação, bastando a existência de um único método abstrato.

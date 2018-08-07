@@ -1,0 +1,1 @@
+Aqui o Usuario::isModerador tem o mesmo efeito que u -> u.isModerador(), gerando um predicado que testa se um usuário é moderador e devolve um booleano. O processamento dessa operação vai parar assim que o stream encontrar algum usuário que é moderador.

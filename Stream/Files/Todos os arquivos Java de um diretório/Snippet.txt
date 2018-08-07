@@ -1,0 +1,3 @@
+Files.list(Paths.get("./br/com/casadocodigo/java8"))
+	.filter(p -> p.toString().endsWith(".java"))
+	.forEach(System.out::println);

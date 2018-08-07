@@ -1,0 +1,12 @@
+Collections.sort(usuarios, new Comparator<Usuario>() {
+	@Override
+	public int compare(Usuario u1, Usuario u2) {
+		return u1.getPontos() - u2.getPontos();
+	}
+});
+
+Collections.reverse(usuarios);
+List<Usuario> top10 = usuarios.subList(0, 10);
+for(Usuario usuario : top10) {
+	usuario.tornaModerador();
+}

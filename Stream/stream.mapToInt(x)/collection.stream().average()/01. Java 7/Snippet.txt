@@ -1,0 +1,13 @@
+double soma = 0;
+
+for (Usuario u : usuarios) {
+	soma += u.getPontos();
+}
+
+double pontuacaoMedia;
+
+if (usuarios.isEmpty()) {
+	pontuacaoMedia = 0;
+} else {
+	pontuacaoMedia = soma / usuarios.size();
+}

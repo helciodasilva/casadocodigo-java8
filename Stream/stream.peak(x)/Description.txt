@@ -1,0 +1,20 @@
+Podemos pedir para que o stream execute um tarefa toda vez que processar um elemento. Fazemos isso através do peek.
+
+Podemos ver que só serão mostrados os elementos até que seja encontrado algum elemento que cumpra o predicado u.getPontos() > 100. Assim, fca claro o poder que o lazyness tem na API de Stream.
+
+Bem diferente de um forEach, que devolve void e é uma operação terminal, o peek devolve um novo Stream e é uma operação intermediária. Ele não forçará a execução do pipeline. O seguinte código simplesmente não imprime nada:
+
+	usuarios.stream()
+			.filter(u -> u.getPontos() > 100)
+			.peek(System.out::println);
+			
+Por quê? Pois o peek devolve um novo Stream, onde está marcado para imprimir todos os elementos processados. Ele só vai processar elementos quando encontrar uma operação terminal, como o findAny, o collect ou o forEach. 
+
+Com o peek, podemos ver se outras operações conseguem tirar vantagem do lazyness. Experimente fazer o mesmo truque com o sorted:
+
+	usuarios.stream()
+			.sorted(Comparator.comparing(Usuario::getNome))
+			.peek(System.out::println)
+			.findAny();
+
+Aqui o peek imprime todos os usuários, mesmo se só queremos fazer findAny. Dizemos que o sorted é um método intermediário stateful. Operações stateful podem precisar processar todo o stream mesmo que sua operação terminal não demande isso.

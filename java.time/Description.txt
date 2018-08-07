@@ -1,0 +1,2 @@
+Trabalhar com datas em Java sempre foi um tanto complicado. Existem muitas críticas às classes Date e Calendar: são mutáveis, possuem várias limitações, decisões de design estranhas, alguns bugs conhecidos e difculdade de se trabalhar com elas. 
+Uma grande introdução do Java 8 foi o pacote java.time, que nos trouxe uma nova API de datas!

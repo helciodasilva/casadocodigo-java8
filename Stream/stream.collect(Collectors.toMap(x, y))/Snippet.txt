@@ -1,0 +1,2 @@
+Map<String, Usuario> nameToUser = usuarios.stream()
+										  .collect(Collectors.toMap(Usuario::getNome, Function.identity()));

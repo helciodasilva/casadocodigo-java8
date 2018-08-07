@@ -1,0 +1,5 @@
+Stream<Usuario> stream = usuarios
+	.stream()
+	.filter(u -> u.getPontos() > 100);
+
+stream.forEach(System.out::println);

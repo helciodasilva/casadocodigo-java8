@@ -1,0 +1,10 @@
+LocalDateTime agora = LocalDateTime.now();
+LocalDateTime daquiAUmaHora = LocalDateTime.now().plusHours(1);
+Duration duration = Duration.between(agora, daquiAUmaHora);
+
+if (duration.isNegative()) {
+	duration = duration.negated();
+}
+
+System.out.printf("%s horas, %s minutos e %s segundos",
+duration.toHours(), duration.toMinutes(), duration.getSeconds());

@@ -1,0 +1,2 @@
+IntStream stream = usuarios.stream()
+						   .mapToInt(Usuario::getPontos);

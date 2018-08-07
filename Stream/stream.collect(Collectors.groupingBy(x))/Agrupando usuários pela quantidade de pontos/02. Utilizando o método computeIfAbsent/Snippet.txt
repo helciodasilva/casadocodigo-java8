@@ -1,0 +1,5 @@
+Map<Integer, List<Usuario>> pontuacao = new HashMap<>();
+for(Usuario u: usuarios) {
+	pontuacao.computeIfAbsent(u.getPontos(), user -> new ArrayList<>()).add(u);
+}
+System.out.println(pontuacao);

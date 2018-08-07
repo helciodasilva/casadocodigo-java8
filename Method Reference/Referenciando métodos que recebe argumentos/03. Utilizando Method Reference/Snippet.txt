@@ -1,0 +1,1 @@
+usuarios.forEach(System.out::println);

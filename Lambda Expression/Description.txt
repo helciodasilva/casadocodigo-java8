@@ -1,0 +1,1 @@
+Quase sempre é vantajoso utilizar um lambda em vez de criar uma classe anônima. Uma das restrições do lambda é que não podemos declarar atributos, isto é, manter estado dentro dela. Essa situação não aparece com frequência, mas veremos sim alguns casos em que o uso do lambda não será possível ou teria de envolver atributos da classe externa.

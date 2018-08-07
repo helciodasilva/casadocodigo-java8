@@ -1,0 +1,12 @@
+static Stream<String> lines(Path p) {
+	try {
+		return Files.lines(p);
+	} catch(IOException e) {
+		throw new UncheckedIOException(e);
+	}
+}
+
+IntStream chars = Files.list(Paths.get("./br/com/casadocodigo/java8"))
+					   .filter(p -> p.toString().endsWith(".java"))
+					   .flatMap(p -> lines(p))
+					   .flatMapToInt((String s) -> s.chars());

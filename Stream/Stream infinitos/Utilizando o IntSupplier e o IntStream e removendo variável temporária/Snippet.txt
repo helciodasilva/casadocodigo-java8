@@ -1,0 +1,2 @@
+Random random = new Random(0);
+IntStream stream = IntStream.generate(() -> random.nextInt());

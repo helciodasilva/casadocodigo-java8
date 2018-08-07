@@ -1,0 +1,5 @@
+Map<YearMonth, List<Payment>> paymentsPerMonth = payments.stream()
+												         .collect(Collectors.groupingBy(p -> YearMonth.from(p.getDate())));
+														 
+paymentsPerMonth.entrySet().stream()
+						   .forEach(System.out::println);

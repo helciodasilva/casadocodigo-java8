@@ -1,0 +1,2 @@
+usuarios.sort(Comparator.comparingInt(Usuario::getPontos)
+					    .thenComparing(Usuario::getNome));

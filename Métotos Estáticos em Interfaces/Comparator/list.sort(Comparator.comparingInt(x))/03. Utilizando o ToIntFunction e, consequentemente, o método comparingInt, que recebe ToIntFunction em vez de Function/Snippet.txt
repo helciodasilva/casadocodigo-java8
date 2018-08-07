@@ -1,0 +1,4 @@
+ToIntFunction<Usuario> extraiPontos = u -> u.getPontos();
+Comparator<Usuario> comparator = Comparator.comparingInt(extraiPontos);
+
+usuarios.sort(comparator);

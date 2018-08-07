@@ -1,0 +1,4 @@
+usuarios.sort(Comparator.comparing(Usuario::getPontos).reversed());
+usuarios
+	.subList(0,10)
+	.forEach(Usuario::tornaModerador);

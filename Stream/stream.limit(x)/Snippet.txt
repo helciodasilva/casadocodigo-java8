@@ -1,0 +1,5 @@
+Random random = new Random(0);
+List<Integer> list = IntStream.generate(() -> random.nextInt())
+							  .limit(100)
+							  .boxed()
+							  .collect(Collectors.toList());

@@ -1,0 +1,2 @@
+List<String> palavras = Arrays.asList("Casa do Código", "Alura", "Caelum");
+Collections.sort(palavras); // Não compila

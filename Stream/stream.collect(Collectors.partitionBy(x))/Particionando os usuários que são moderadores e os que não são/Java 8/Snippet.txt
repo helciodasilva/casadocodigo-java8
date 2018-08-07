@@ -1,0 +1,4 @@
+Map<Boolean, List<Usuario>> moderadores = usuarios.stream()
+												  .collect(Collectors.partitioningBy(Usuario::isModerador));
+												  
+System.out.println(moderadores);

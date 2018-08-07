@@ -1,0 +1,5 @@
+RelatorioController controller = new RelatorioController();
+
+Role[] annotationsByType = controller.getClass().getAnnotationsByType(Role.class);
+
+Arrays.asList(annotationsByType).forEach(a -> System.out.println(a.value()));

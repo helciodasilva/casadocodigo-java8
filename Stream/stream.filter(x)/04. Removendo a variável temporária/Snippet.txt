@@ -1,0 +1,2 @@
+usuarios.stream()
+	.filter(u -> u.getPontos() > 100);

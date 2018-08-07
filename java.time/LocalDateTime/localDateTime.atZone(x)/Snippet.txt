@@ -1,0 +1,2 @@
+LocalDateTime dataEhora = LocalDateTime.now();
+ZonedDateTime dataComHoraETimezone = dataEhora.atZone(ZoneId.of("America/Sao_Paulo"));

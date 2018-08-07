@@ -1,0 +1,2 @@
+Stream<Usuario> stream = usuarios.stream();
+stream.filter(u -> {return u.getPontos() > 100});

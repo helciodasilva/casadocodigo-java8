@@ -1,0 +1,3 @@
+Usuario rodrigo = new Usuario("Rodrigo Turini", 50);
+Runnable bloco = () -> rodrigo.tornaModerador();
+bloco.run();

@@ -1,0 +1,1 @@
+Usuario[] array = stream.toArray(Usuario[]::new)

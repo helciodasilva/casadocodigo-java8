@@ -1,0 +1,3 @@
+O toCollection recebe um Supplier<T>, que já vimos. A interface Supplier é como uma factory, possuindo um único método ( get) que não recebe argumento e devolve T. Relembrando method references com construtores, fazer toCollection(HashSet::new) é o mesmo que toCollection(() -> new HashSet<Usuario>()) nesse caso.
+
+Você também pode invocar toArray que devolve um array de Object em um Stream, ou invocar o toArray passando a forma de construir uma array (através de um IntSupplier). Um exemplo seria Usuario[] array = stream.toArray(Usuario[]::new).

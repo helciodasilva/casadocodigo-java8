@@ -1,0 +1,4 @@
+double pontuacaoMedia = usuarios.stream()
+								.mapToInt(Usuario::getPontos)
+								.average()
+								.orElseThrow(IllegalStateException::new);

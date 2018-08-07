@@ -1,0 +1,4 @@
+Consumer<Usuario> mostrador =
+	u -> {System.out.println(u.getNome());};
+	
+usuarios.forEach(mostrador);

@@ -1,0 +1,5 @@
+BigDecimal total = payments.stream()
+					       .map(p -> p.getProducts().stream()
+								.map(Product::getPrice)
+								.reduce(BigDecimal.ZERO, BigDecimal::add))
+						   .reduce(BigDecimal.ZERO, BigDecimal::add);

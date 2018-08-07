@@ -1,0 +1,7 @@
+Comparator<Usuario> comparator = new Comparator<Usuario>() {
+	public int compare(Usuario u1, Usuario u2) {
+		return u1.getNome().compareTo(u2.getNome());
+	}
+};
+
+Collections.sort(usuarios, comparator);

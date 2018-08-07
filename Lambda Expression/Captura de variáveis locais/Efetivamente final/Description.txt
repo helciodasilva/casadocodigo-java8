@@ -1,0 +1,10 @@
+Assim como numa classe anônima local, você também pode acessar as variáveis fnais do método a qual você pertence.
+
+Um lambda do Java enclausura as variáveis que estavam naquele contexto, assim com as classes anônimas.
+Quer mais? Você pode até mesmo acessar a variável local que não é fnal.
+
+Porém, ela deve ser efetivamente fnal. Isso é, apesar de não precisar declarar as variáveis locais como final, você não pode alterá-las se estiver utilizando-as dentro do lambda.
+
+E isso também vale para as classes anônimas a partir do Java 8. Você não precisa mais declarar as variáveis locais como final, basta não alterá-las que o Java vai permitir acessá-las.
+
+Claro que problemas de concorrência ainda podem acontecer no caso de você invocar métodos que alterem estado dos objetos envolvidos.

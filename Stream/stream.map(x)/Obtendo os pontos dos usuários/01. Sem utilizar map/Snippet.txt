@@ -1,0 +1,2 @@
+List<Integer> pontos = new ArrayList<>();
+usuarios.forEach(u -> pontos.add(u.getPontos()));

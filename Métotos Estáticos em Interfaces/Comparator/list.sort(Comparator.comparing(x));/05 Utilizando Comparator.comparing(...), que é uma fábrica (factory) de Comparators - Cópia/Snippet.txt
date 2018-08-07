@@ -1,0 +1,3 @@
+Function<Usuario, String> extraiNome = u -> u.getNome();
+Comparator<Usuario> comparator = Comparator.comparing(extraiPontos);
+usuarios.sort(comparator);

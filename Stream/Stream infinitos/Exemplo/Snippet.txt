@@ -1,0 +1,3 @@
+Random random = new Random(0);
+Supplier<Integer> supplier = () -> random.nextInt();
+Stream<Integer> stream = Stream.generate(supplier);

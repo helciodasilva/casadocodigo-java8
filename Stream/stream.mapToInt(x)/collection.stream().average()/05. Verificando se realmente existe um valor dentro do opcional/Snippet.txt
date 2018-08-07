@@ -1,0 +1,4 @@
+usuarios.stream()
+		.mapToInt(Usuario::getPontos)
+		.average()
+		.ifPresent(valor -> janela.atualiza(valor));

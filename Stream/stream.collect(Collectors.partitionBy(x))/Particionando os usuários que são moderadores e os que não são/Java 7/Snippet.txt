@@ -1,0 +1,9 @@
+Map<Integer, List<Usuario>> pontuacao = new HashMap<>();
+for(Usuario u: usuarios) {
+	if(!pontuacao.containsKey(u.getPontos())) {
+		pontuacao.put(u.getPontos(), new ArrayList<>());
+	}
+	pontuacao.get(u.getPontos()).add(u);
+}
+
+System.out.println(pontuacao);

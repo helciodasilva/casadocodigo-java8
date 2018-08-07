@@ -1,0 +1,12 @@
+List<Usuario> usuariosFiltrados = new ArrayList<>();
+for(Usuario usuario : usuarios) {
+	if(usuario.getPontos() > 100) {
+		usuariosFiltrados.add(usuario);
+	}
+}
+
+Collections.sort(usuariosFiltrados, new Comparator<Usuario>() {
+	public int compare(Usuario u1, Usuario u2) {
+		return u1.getNome().compareTo(u2.getNome());
+	}
+});

@@ -1,0 +1,6 @@
+long sum = LongStream.range(0, 1_000_000_000)
+					 .parallel()
+					 .filter(x -> x % 2 == 0)
+					 .sum();
+					 
+System.out.println(sum);

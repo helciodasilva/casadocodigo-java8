@@ -1,0 +1,1 @@
+usuarios.stream().iterator().forEachRemaining(System.out::println);

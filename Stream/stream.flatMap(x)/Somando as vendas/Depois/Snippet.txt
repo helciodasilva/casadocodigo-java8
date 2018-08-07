@@ -1,0 +1,3 @@
+BigDecimal totalFlat = payments.stream()
+				               .flatMap(p -> p.getProducts().stream().map(Product::getPrice))
+				               .reduce(BigDecimal.ZERO, BigDecimal::add);

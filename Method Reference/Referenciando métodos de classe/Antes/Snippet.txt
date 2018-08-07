@@ -1,0 +1,3 @@
+Usuario rodrigo = new Usuario("Rodrigo Turini", 50);
+Consumer<Usuario> consumer = u -> u.tornaModerador();
+consumer.accept(rodrigo);

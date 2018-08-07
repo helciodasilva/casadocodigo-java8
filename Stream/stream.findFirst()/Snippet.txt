@@ -1,0 +1,4 @@
+Optional<RugbyPlayer> result = players.stream()
+									  .filter(player -> player.getName().indexOf("Tadgh")  >= 0)
+									  .findFirst();      
+String outputMessage = result.isPresent() ? result.get().toString() : "not found";

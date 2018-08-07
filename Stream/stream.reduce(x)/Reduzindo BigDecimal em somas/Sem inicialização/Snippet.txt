@@ -1,0 +1,4 @@
+payment1.getProducts().stream()
+					  .map(Product::getPrice)
+					  .reduce(BigDecimal::add)
+					  .ifPresent(System.out::println);

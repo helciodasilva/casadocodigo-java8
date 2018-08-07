@@ -1,0 +1,2 @@
+LocalDateTime agora = LocalDateTime.now();
+agora.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));

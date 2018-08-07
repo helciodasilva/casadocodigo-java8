@@ -1,0 +1,3 @@
+for(Usuario u : usuarios) {
+	System.out.println(u.getNome());
+}

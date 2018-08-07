@@ -1,0 +1,3 @@
+Também podemos, a partir desse LocalDateTime, chamar o método atZone para construir um ZonedDateTime, que é o modelo utilizado para representar uma data com hora e timezone.
+
+Em alguns momentos é importante trabalhar com o timezone, mas o ideal é utilizá-lo apenas quando realmente for necessário. A própria documentação pede cuidado com o uso dessa informação, pois muitas vezes não será necessário e usá-la pode causar problemas, como para guardar o aniversário de um usuário.

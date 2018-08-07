@@ -1,0 +1,2 @@
+Map<Integer, List<Usuario>> pontuacao = usuarios.stream()
+												.collect(Collectors.groupingBy(Usuario::getPontos));

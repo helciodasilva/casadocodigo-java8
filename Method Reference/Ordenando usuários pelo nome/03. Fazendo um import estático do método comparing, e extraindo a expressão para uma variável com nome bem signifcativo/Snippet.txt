@@ -1,0 +1,2 @@
+Function<Usuario, String> byName = Usuario::getNome;
+usuarios.sort(comparing(byName));

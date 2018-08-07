@@ -1,0 +1,3 @@
+Optional<String> maxNome = usuarios.stream()
+								   .max(Comparator.comparingInt(Usuario::getPontos))
+								   .map(u -> u.getNome());

@@ -1,0 +1,2 @@
+YearMonth ym = YearMonth.from(data);
+System.out.println(ym.getMonth() + " " + ym.getYear());

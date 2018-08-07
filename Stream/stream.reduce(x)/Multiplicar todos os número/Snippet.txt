@@ -1,0 +1,3 @@
+int multiplicacao = usuarios.stream()
+							.mapToInt(Usuario::getPontos)
+							.reduce(1, (a,b) -> a * b);

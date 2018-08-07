@@ -1,0 +1,5 @@
+for(Usuario usuario : usuarios) {
+	if(usuario.getPontos() > 100) {
+		usuario.tornaModerador();
+	}
+}

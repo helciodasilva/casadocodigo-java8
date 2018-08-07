@@ -1,0 +1,2 @@
+LocalDateTime agora = LocalDateTime.now();
+String resultado = agora.format(DateTimeFormatter.ISO_LOCAL_TIME);
